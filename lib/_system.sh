@@ -29,13 +29,13 @@ EOF
 #######################################
 system_git_clone() {
   print_banner
-  printf "${WHITE} 💻 Fazendo download do repositório do Ramon...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Fazendo download do repositório do Canove...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
 
   sudo su - deploy <<EOF
-  git clone https://github.com/ram0ng1/whaticket /home/deploy/whaticket/
+  git clone https://github.com/canove/whaticket /home/deploy/whaticket/
 EOF
 
   sleep 2
@@ -73,7 +73,7 @@ system_node_install() {
   sleep 2
 
   sudo su - root <<EOF
-  curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+  curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
   apt-get install -y nodejs
 EOF
 
